@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--通过namespace绑定上面创建的接口类，文件名就是【数据对象类名+Mapper.xml】-->
+<mapper namespace="com.compass.mapper.UserMapper">
+
+    <!--配置全局类名-->
+    <sql id="column">
+        user_name as userName,password as passWord
+    </sql>
+
+    <!--插入用户信息-->
+    <!--加入插入语句,并用【parameterType】来设置要插入的数据类型是哪个类,用【id】来绑定上面namespace类下使用这个sql语句的方法名-->
+    <insert id="register"
+            useGeneratedKeys="true"
+            keyColumn="id"
+            keyProperty="id"
+            parameterType="com.compass.entity.User">
+
+        insert into user(user_name,password,email)
+        value (#{userName},#{passWord},#{email})
+    </insert>
+
+    <!--传入user对象，通过user对象里的name和code属性查询是否有数据-->
+    <select id="checkUser" parameterType="com.compass.entity.User" resultType="com.compass.entity.User">
+        select
+        <include refid="column"></include>
+        from user
+        <where>
+            1=1
+            <if test="userName!=null">
+                and user_name=#{userName}
+            </if>
+            <if test="passWord!=null">
+                and password=#{passWord}
+            </if>
+        </where>
+    </select>
+</mapper>
