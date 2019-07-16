@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <property name="LOG_PATH" value="./logs"/>
+    <!--Appender主要用于指定日志输出的目的地，目的地可以是控制台、文件等-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <!--格式化输出：%d表示日期，%thread表示线程名-->
+        <!--%-5level：级别从左显示5个字符宽度-->
+        <!--%logger{35} 表示logger名字最长35个字符，否则按照句点分割-->
+        <!-- %msg：日志消息-->
+        <!-- %n是换行符-->
+        <!--layout负责把事件转换成字符串，格式化的日志信息的输出-->
+        <layout>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{10} -
+                %msg %n</pattern>
+        </layout>
+    </appender>
+
+    <appender name="MAXDATEFILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!--日志文件输出的文件名-->
+            <fileNamePattern>${LOG_PATH}/logFile.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <!--日志文件保留天数-->
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} -
+                %msg%n</pattern>
+        </encoder>
+        <!--当文件大于10MB时，生成新的日志文件-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>10MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+
+    <appender name="ERROR_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <FileNamePattern>${LOG_PATH}/error.%d{yyyy-MM-dd}.log</FileNamePattern>
+        </rollingPolicy>
+        <layout>
+            <pattern>[%date{yyyy-MM-dd HH:mm:ss}] [%-5level] [%logger:%line] --%mdc{client}
+                %msg%n</pattern>
+        </layout>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!--根节点设置日志级别，设置使用哪些节点-->
+    <root level="info">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="MAXDATEFILE"/>
+        <appender-ref ref="ERROR_FILE"/>
+    </root>
+</configuration>
