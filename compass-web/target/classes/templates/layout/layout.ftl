@@ -38,7 +38,7 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <!-- 用户的图片-->
                             <#--<img src="" class="user-image" alt="User Image">-->
-                            <!-- 隐藏的XS在小型设备上隐藏用户名，因此只显示图像 -->
+                            <#--获取设置的session中的值-->
                             <span>${Session.loginUser.userName}</span>
                             <span class="hidden-xs">
                             欢迎您!

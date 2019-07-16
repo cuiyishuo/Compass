@@ -97,10 +97,10 @@
                             <div class="form-group">
                                 <span style="color: red">${msg!}</span>
                             </div>
-                            <button type="submit" class="btn">登 录</button>
+                            <button type="submit" class="btn" style="background-color: #937aff;">登 录</button>
                             <#--onckicl方法中可以直接进行跳转-->
                             <button id="toRegisterBtn" type="button" class="btn"
-                                    onclick="window.location.href='/login/registeredPage'" style="margin-left: 15px;background-color: deeppink;">注 册
+                                    onclick="window.location.href='/login/registeredPage'" style="margin-left: 15px;background-color: #ffc51b;">注 册
                             </button>
                         </form>
                     </div>
