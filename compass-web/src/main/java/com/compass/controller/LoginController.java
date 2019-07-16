@@ -4,6 +4,7 @@ import com.compass.entity.User;
 import com.compass.service.UserService;
 import com.compass.vo.LoginUser;
 import com.compass.vo.ResponseMessage;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -27,6 +28,7 @@ import javax.validation.Valid;
 @Controller
 @RequestMapping("/login")
 @SessionAttributes(value = {"loginUser"})
+@Slf4j
 public class LoginController {
 
     @Autowired
@@ -111,6 +113,7 @@ public class LoginController {
         LoginUser loginUser = (LoginUser) responseMessage.getObj();
         // 将拿到的loginUser对象添加到session中，参数一为session的key名，参数二是传进去的数据
         modelMap.addAttribute("loginUser", loginUser);
+        log.info("{} 登录成功",loginUser.getUserName());
         modelAndView.setViewName("index");
         return modelAndView;
     }
