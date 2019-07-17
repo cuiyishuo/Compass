@@ -1,0 +1,2198 @@
+2019-07-16 12:28:13.478 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 3522 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 12:28:13.481 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 12:28:13.492 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64e6db6a: startup date [Tue Jul 16 12:28:13 CST 2019]; root of context hierarchy
+2019-07-16 12:28:14.599 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 12:28:14.600 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 12:28:14.601 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 12:28:14.620 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 12:28:14.621 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 1129 ms
+2019-07-16 12:28:14.714 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 12:28:14.715 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 12:28:14.715 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 12:28:14.716 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 12:28:14.716 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 12:28:14.716 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 12:28:14.716 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 12:28:14.863 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 12:28:16.585 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-2} inited
+2019-07-16 12:28:16.785 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64e6db6a: startup date [Tue Jul 16 12:28:13 CST 2019]; root of context hierarchy
+2019-07-16 12:28:16.803 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 12:28:16.803 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 12:28:16.807 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:28:16.808 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 12:28:16.808 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:28:16.808 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 12:28:16.809 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 12:28:16.812 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 12:28:16.813 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 12:28:16.836 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:16.836 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:16.865 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:16.966 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 12:28:17.164 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 12:28:17.541 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 12:28:17.545 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 12:28:17.546 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 12:28:17.556 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 12:28:17.558 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 12:28:17.563 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 6641 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 12:28:17.566 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 12:28:17.575 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 12:28:17.595 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 4.394 seconds (JVM running for 18746.353)
+2019-07-16 12:28:17.708 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bb59757: startup date [Tue Jul 16 12:28:17 CST 2019]; root of context hierarchy
+2019-07-16 12:28:17.827 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 12:28:20.205 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 12:28:20.220 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 12:28:20.221 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 12:28:20.310 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 12:28:20.310 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2602 ms
+2019-07-16 12:28:20.617 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 12:28:20.619 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 12:28:20.625 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 12:28:20.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 12:28:20.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 12:28:20.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 12:28:20.626 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 12:28:20.829 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 12:28:21.619 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 12:28:22.251 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bb59757: startup date [Tue Jul 16 12:28:17 CST 2019]; root of context hierarchy
+2019-07-16 12:28:22.365 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 12:28:22.366 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 12:28:22.370 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:28:22.371 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 12:28:22.372 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:28:22.374 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 12:28:22.374 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 12:28:22.377 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 12:28:22.378 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 12:28:22.425 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:22.425 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:22.491 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:28:22.942 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 12:28:23.178 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer -
+                Unable to start LiveReload server
+2019-07-16 12:28:23.369 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 12:28:23.372 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 12:28:23.372 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 12:28:23.379 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 12:28:23.380 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 12:28:23.410 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:28:23.433 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:28:23.467 [restartedMain] ERROR o.a.coyote.http11.Http11NioProtocol -
+                Failed to start end point associated with ProtocolHandler ["http-nio-8089"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2019-07-16 12:28:23.468 [restartedMain] ERROR o.a.catalina.core.StandardService -
+                Failed to start connector [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8089]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+2019-07-16 12:28:23.487 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:28:23.487 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2019-07-16 12:28:23.500 [restartedMain] INFO  o.a.catalina.util.LifecycleBase -
+                The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-07-16 12:28:23.501 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:28:23.501 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:28:23.505 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+                
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-16 12:28:23.510 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2019-07-16 12:28:23.512 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5bb59757: startup date [Tue Jul 16 12:28:17 CST 2019]; root of context hierarchy
+2019-07-16 12:28:23.514 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 12:28:23.515 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 12:28:23.516 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 12:29:49.408 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 12:29:49.409 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 12:29:49.419 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2019-07-16 12:29:49.498 [http-nio-8089-exec-1] ERROR freemarker.runtime -
+                Error executing FreeMarker template
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 12:29:49.514 [http-nio-8089-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----] with root cause
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 12:32:20.062 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 6655 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 12:32:20.064 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 12:32:20.249 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b663c9f: startup date [Tue Jul 16 12:32:20 CST 2019]; root of context hierarchy
+2019-07-16 12:32:20.329 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 12:32:22.337 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 12:32:22.348 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 12:32:22.357 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 12:32:22.456 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 12:32:22.457 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2207 ms
+2019-07-16 12:32:22.727 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 12:32:22.730 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 12:32:22.735 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 12:32:22.735 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 12:32:22.736 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 12:32:22.736 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 12:32:22.736 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 12:32:22.901 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 12:32:23.547 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 12:32:24.209 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b663c9f: startup date [Tue Jul 16 12:32:20 CST 2019]; root of context hierarchy
+2019-07-16 12:32:24.377 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 12:32:24.379 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 12:32:24.385 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:32:24.385 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 12:32:24.385 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 12:32:24.386 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:32:24.386 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 12:32:24.391 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 12:32:24.392 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 12:32:24.480 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:32:24.480 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:32:24.560 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:32:24.973 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 12:32:25.189 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer -
+                Unable to start LiveReload server
+2019-07-16 12:32:25.361 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 12:32:25.363 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 12:32:25.363 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 12:32:25.369 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 12:32:25.369 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 12:32:25.386 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:32:25.400 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:32:25.431 [restartedMain] ERROR o.a.coyote.http11.Http11NioProtocol -
+                Failed to start end point associated with ProtocolHandler ["http-nio-8089"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2019-07-16 12:32:25.436 [restartedMain] ERROR o.a.catalina.core.StandardService -
+                Failed to start connector [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8089]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+2019-07-16 12:32:25.453 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:32:25.453 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2019-07-16 12:32:25.465 [restartedMain] INFO  o.a.catalina.util.LifecycleBase -
+                The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-07-16 12:32:25.465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:32:25.465 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:32:25.471 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+                
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-16 12:32:25.479 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2019-07-16 12:32:25.482 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b663c9f: startup date [Tue Jul 16 12:32:20 CST 2019]; root of context hierarchy
+2019-07-16 12:32:25.490 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 12:32:25.491 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 12:32:25.496 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 12:33:10.290 [http-nio-8089-exec-2] INFO  c.c.controller.LoginController -
+                sol 登录成功
+2019-07-16 12:33:10.299 [http-nio-8089-exec-2] INFO  freemarker.beans -
+                Detected multiple classes with the same name, "com.compass.vo.LoginUser". Assuming it was a class-reloading. Clearing class introspection caches to release old data.
+2019-07-16 12:45:03.246 [Thread-30] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64e6db6a: startup date [Tue Jul 16 12:28:13 CST 2019]; root of context hierarchy
+2019-07-16 12:45:03.261 [Thread-30] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 12:45:03.262 [Thread-30] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 12:45:03.275 [Thread-30] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-2} closed
+2019-07-16 12:45:32.074 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 6763 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 12:45:32.077 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 12:45:32.234 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6929ce79: startup date [Tue Jul 16 12:45:32 CST 2019]; root of context hierarchy
+2019-07-16 12:45:32.402 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 12:45:34.874 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 12:45:34.887 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 12:45:34.889 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 12:45:34.993 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 12:45:34.993 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2759 ms
+2019-07-16 12:45:35.295 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 12:45:35.297 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 12:45:35.301 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 12:45:35.301 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 12:45:35.301 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 12:45:35.302 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 12:45:35.302 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 12:45:35.592 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 12:45:36.222 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 12:45:36.833 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6929ce79: startup date [Tue Jul 16 12:45:32 CST 2019]; root of context hierarchy
+2019-07-16 12:45:36.922 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 12:45:36.923 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 12:45:36.927 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:45:36.927 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 12:45:36.928 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 12:45:36.928 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 12:45:36.928 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 12:45:36.932 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 12:45:36.932 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 12:45:36.973 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:45:36.973 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:45:37.028 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 12:45:37.598 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 12:45:37.837 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 12:45:38.016 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 12:45:38.017 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 12:45:38.018 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 12:45:38.024 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 12:45:38.025 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 12:45:38.042 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:45:38.064 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 12:45:38.118 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 12:45:38.159 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 12:45:38.166 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 6.758 seconds (JVM running for 8.555)
+2019-07-16 12:45:50.046 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 12:45:50.047 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 12:45:50.107 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 60 ms
+2019-07-16 12:45:59.091 [http-nio-8089-exec-7] ERROR freemarker.runtime -
+                Error executing FreeMarker template
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 12:45:59.100 [http-nio-8089-exec-7] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----] with root cause
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 14:02:25.659 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 7117 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 14:02:25.661 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 14:02:25.794 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@356bb4ad: startup date [Tue Jul 16 14:02:25 CST 2019]; root of context hierarchy
+2019-07-16 14:02:25.911 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 14:02:28.180 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 14:02:28.189 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 14:02:28.191 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 14:02:28.288 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 14:02:28.288 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2494 ms
+2019-07-16 14:02:28.624 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 14:02:28.626 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 14:02:28.630 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 14:02:28.631 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 14:02:28.631 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 14:02:28.631 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 14:02:28.631 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 14:02:28.822 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 14:02:29.538 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 14:02:30.188 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@356bb4ad: startup date [Tue Jul 16 14:02:25 CST 2019]; root of context hierarchy
+2019-07-16 14:02:30.280 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 14:02:30.281 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 14:02:30.286 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:02:30.287 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 14:02:30.287 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 14:02:30.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:02:30.288 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 14:02:30.291 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 14:02:30.292 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 14:02:30.526 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:02:30.527 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:02:30.610 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:02:31.059 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 14:02:31.303 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer -
+                Unable to start LiveReload server
+2019-07-16 14:02:31.480 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 14:02:31.482 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 14:02:31.482 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 14:02:31.493 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 14:02:31.494 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 14:02:31.551 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:02:31.627 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:02:31.654 [restartedMain] ERROR o.a.coyote.http11.Http11NioProtocol -
+                Failed to start end point associated with ProtocolHandler ["http-nio-8089"]
+java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+2019-07-16 14:02:31.656 [restartedMain] ERROR o.a.catalina.core.StandardService -
+                Failed to start connector [Connector[HTTP/1.1-8089]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-8089]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:250)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:193)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.compass.SpringBootApplication.main(SpringBootApplication.java:20)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.apache.catalina.LifecycleException: service.getName(): "Tomcat";  Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1029)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 18 common frames omitted
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:990)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:635)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1022)
+	... 19 common frames omitted
+2019-07-16 14:02:31.665 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Pausing ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:02:31.666 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Stopping service [Tomcat]
+2019-07-16 14:02:31.675 [restartedMain] INFO  o.a.catalina.util.LifecycleBase -
+                The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-07-16 14:02:31.676 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Stopping ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:02:31.676 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Destroying ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:02:31.680 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer -
+                
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-07-16 14:02:31.685 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter -
+                
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8089 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8089, or configure this application to listen on another port.
+
+2019-07-16 14:02:31.687 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@356bb4ad: startup date [Tue Jul 16 14:02:25 CST 2019]; root of context hierarchy
+2019-07-16 14:02:31.689 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 14:02:31.690 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 14:02:31.692 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 14:20:03.656 [Thread-23] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6929ce79: startup date [Tue Jul 16 12:45:32 CST 2019]; root of context hierarchy
+2019-07-16 14:20:03.739 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 14:20:03.739 [Thread-23] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 14:20:03.753 [Thread-23] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 14:20:15.125 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 7269 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 14:20:15.131 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 14:20:15.300 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@268a902d: startup date [Tue Jul 16 14:20:15 CST 2019]; root of context hierarchy
+2019-07-16 14:20:15.501 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 14:20:17.884 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 14:20:17.894 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 14:20:17.895 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 14:20:17.986 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 14:20:17.986 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2686 ms
+2019-07-16 14:20:18.394 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 14:20:18.397 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 14:20:18.442 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 14:20:18.446 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 14:20:18.447 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 14:20:18.451 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 14:20:18.452 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 14:20:18.716 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 14:20:19.449 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 14:20:20.155 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@268a902d: startup date [Tue Jul 16 14:20:15 CST 2019]; root of context hierarchy
+2019-07-16 14:20:20.290 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 14:20:20.291 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 14:20:20.295 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:20:20.296 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 14:20:20.296 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 14:20:20.297 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:20:20.297 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 14:20:20.300 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 14:20:20.300 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 14:20:20.340 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:20:20.340 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:20:20.451 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:20:20.731 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 14:20:21.124 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 14:20:21.293 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 14:20:21.294 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 14:20:21.295 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 14:20:21.301 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 14:20:21.302 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 14:20:21.316 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:20:21.326 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:20:21.368 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 14:20:21.408 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 14:20:21.446 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 7.814 seconds (JVM running for 9.675)
+2019-07-16 14:22:02.127 [Thread-25] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@268a902d: startup date [Tue Jul 16 14:20:15 CST 2019]; root of context hierarchy
+2019-07-16 14:22:02.131 [Thread-25] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 14:22:02.132 [Thread-25] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 14:22:02.134 [Thread-25] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 14:22:09.765 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 7277 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 14:22:09.767 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 14:22:09.836 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31b80b1b: startup date [Tue Jul 16 14:22:09 CST 2019]; root of context hierarchy
+2019-07-16 14:22:09.983 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 14:22:12.004 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 14:22:12.015 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 14:22:12.017 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 14:22:12.096 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 14:22:12.096 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2260 ms
+2019-07-16 14:22:12.466 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 14:22:12.469 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 14:22:12.479 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 14:22:12.484 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 14:22:12.484 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 14:22:12.485 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 14:22:12.485 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 14:22:12.714 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 14:22:13.433 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 14:22:14.039 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31b80b1b: startup date [Tue Jul 16 14:22:09 CST 2019]; root of context hierarchy
+2019-07-16 14:22:14.155 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 14:22:14.157 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 14:22:14.161 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:22:14.161 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 14:22:14.162 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 14:22:14.162 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 14:22:14.162 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 14:22:14.165 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 14:22:14.166 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 14:22:14.207 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:22:14.207 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:22:14.268 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 14:22:14.717 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 14:22:14.943 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 14:22:15.109 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 14:22:15.111 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 14:22:15.112 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 14:22:15.119 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 14:22:15.120 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 14:22:15.134 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:22:15.144 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 14:22:15.208 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 14:22:15.257 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 14:22:15.263 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 5.995 seconds (JVM running for 8.48)
+2019-07-16 14:22:22.708 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 14:22:22.709 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 14:22:22.735 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2019-07-16 15:17:40.744 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on cuiyishuodeMacBook-Pro.local with PID 7277 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 15:17:40.744 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 15:17:40.748 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70d25661: startup date [Tue Jul 16 15:17:40 CST 2019]; root of context hierarchy
+2019-07-16 15:17:41.339 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 15:17:41.340 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 15:17:41.340 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 15:17:41.356 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 15:17:41.357 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 609 ms
+2019-07-16 15:17:41.401 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 15:17:41.401 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 15:17:41.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 15:17:41.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 15:17:41.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 15:17:41.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 15:17:41.403 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 15:17:41.965 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 15:17:42.331 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-3} inited
+2019-07-16 15:17:42.427 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70d25661: startup date [Tue Jul 16 15:17:40 CST 2019]; root of context hierarchy
+2019-07-16 15:17:42.437 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 15:17:42.438 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 15:17:42.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 15:17:42.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 15:17:42.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 15:17:42.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 15:17:42.439 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 15:17:42.441 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 15:17:42.442 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 15:17:42.451 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 15:17:42.451 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 15:17:42.467 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 15:17:42.514 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 15:17:42.631 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 15:17:42.787 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 15:17:42.787 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 15:17:42.788 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 15:17:42.791 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 15:17:42.792 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 15:17:42.799 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 15:17:42.801 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 2.388 seconds (JVM running for 3335.894)
+2019-07-16 19:11:58.692 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on bogon with PID 9286 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 19:11:58.694 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 19:11:58.815 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7deaa8cb: startup date [Tue Jul 16 19:11:58 CST 2019]; root of context hierarchy
+2019-07-16 19:11:59.015 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 19:12:01.578 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 19:12:01.588 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 19:12:01.589 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 19:12:01.667 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 19:12:01.667 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2852 ms
+2019-07-16 19:12:01.925 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 19:12:01.926 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 19:12:01.930 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 19:12:01.930 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 19:12:01.930 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 19:12:01.931 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 19:12:01.931 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 19:12:02.120 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 19:12:02.771 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 19:12:03.386 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7deaa8cb: startup date [Tue Jul 16 19:11:58 CST 2019]; root of context hierarchy
+2019-07-16 19:12:03.460 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 19:12:03.461 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 19:12:03.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:12:03.465 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 19:12:03.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:12:03.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 19:12:03.466 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 19:12:03.469 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 19:12:03.469 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 19:12:03.509 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:12:03.509 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:12:03.776 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:12:04.332 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 19:12:04.582 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 19:12:04.756 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 19:12:04.757 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 19:12:04.758 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 19:12:04.764 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 19:12:04.764 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 19:12:04.779 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:12:04.795 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:12:04.838 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 19:12:04.871 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 19:12:04.885 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 6.943 seconds (JVM running for 8.489)
+2019-07-16 19:12:18.836 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 19:12:18.837 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 19:12:18.869 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+2019-07-16 19:12:30.935 [http-nio-8089-exec-8] INFO  c.c.controller.LoginController -
+                sol 登录成功
+2019-07-16 19:12:37.999 [http-nio-8089-exec-9] INFO  c.c.controller.LoginController -
+                sol 登录成功
+2019-07-16 19:29:18.803 [Thread-24] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7deaa8cb: startup date [Tue Jul 16 19:11:58 CST 2019]; root of context hierarchy
+2019-07-16 19:29:18.861 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 19:29:18.862 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 19:29:18.895 [Thread-24] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 19:29:28.797 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on bogon with PID 9359 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 19:29:28.799 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 19:29:28.944 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4933cef: startup date [Tue Jul 16 19:29:28 CST 2019]; root of context hierarchy
+2019-07-16 19:29:29.044 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 19:29:31.235 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 19:29:31.245 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 19:29:31.246 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 19:29:31.325 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 19:29:31.326 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2382 ms
+2019-07-16 19:29:31.657 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 19:29:31.660 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 19:29:31.667 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 19:29:31.668 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 19:29:31.669 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 19:29:31.669 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 19:29:31.669 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 19:29:32.079 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 19:29:32.783 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 19:29:33.435 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4933cef: startup date [Tue Jul 16 19:29:28 CST 2019]; root of context hierarchy
+2019-07-16 19:29:33.507 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 19:29:33.508 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 19:29:33.510 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/dubbo/dubboPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.DubboController.DubboPage()
+2019-07-16 19:29:33.513 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:29:33.513 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:29:33.514 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 19:29:33.514 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 19:29:33.515 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 19:29:33.517 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 19:29:33.518 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 19:29:33.560 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:29:33.560 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:29:33.607 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:29:34.043 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 19:29:34.264 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 19:29:34.433 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 19:29:34.435 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 19:29:34.435 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 19:29:34.441 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 19:29:34.442 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 19:29:34.459 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:29:34.470 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:29:34.521 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 19:29:34.564 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 19:29:34.585 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 7.01 seconds (JVM running for 8.627)
+2019-07-16 19:34:17.806 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 19:34:17.808 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 19:34:17.846 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2019-07-16 19:34:18.660 [http-nio-8089-exec-1] INFO  c.c.controller.LoginController -
+                sol 登录成功
+2019-07-16 19:34:22.745 [http-nio-8089-exec-5] ERROR freemarker.runtime -
+                Error executing FreeMarker template
+freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "/templates/layout/layout.ftl"):
+Template not found for name "templates/layout/layout.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates", canonicalBasePath="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates/"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "/templates/layout/layout.ftl"  [in template "tool/dubbo.ftl" at line 1, column 1]
+----
+	at freemarker.core.Include.accept(Include.java:164)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: freemarker.template.TemplateNotFoundException: Template not found for name "templates/layout/layout.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates", canonicalBasePath="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates/"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2565)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2466)
+	at freemarker.core.Include.accept(Include.java:162)
+	... 58 common frames omitted
+2019-07-16 19:34:22.761 [http-nio-8089-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "/templates/layout/layout.ftl"):
+Template not found for name "templates/layout/layout.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates", canonicalBasePath="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates/"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: #include "/templates/layout/layout.ftl"  [in template "tool/dubbo.ftl" at line 1, column 1]
+----] with root cause
+freemarker.template.TemplateNotFoundException: Template not found for name "templates/layout/layout.ftl".
+The name was interpreted by this TemplateLoader: MultiTemplateLoader(loader1 = FileTemplateLoader(baseDir="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates", canonicalBasePath="/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes/templates/"), loader2 = ClassTemplateLoader(resourceLoaderClass=org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer, basePackagePath="" /* relatively to resourceLoaderClass pkg */)).
+	at freemarker.template.Configuration.getTemplate(Configuration.java:2565)
+	at freemarker.core.Environment.getTemplateForInclusion(Environment.java:2466)
+	at freemarker.core.Include.accept(Include.java:162)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 19:35:47.021 [Thread-24] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4933cef: startup date [Tue Jul 16 19:29:28 CST 2019]; root of context hierarchy
+2019-07-16 19:35:47.027 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans on shutdown
+2019-07-16 19:35:47.030 [Thread-24] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Unregistering JMX-exposed beans
+2019-07-16 19:35:47.043 [Thread-24] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} closed
+2019-07-16 19:35:53.797 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Starting SpringBootApplication on bogon with PID 9372 (/Users/cuiyishuo/IdeaProjects/compass/compass-web/target/classes started by cuiyishuo in /Users/cuiyishuo/IdeaProjects/compass)
+2019-07-16 19:35:53.798 [restartedMain] INFO  com.compass.SpringBootApplication -
+                No active profile set, falling back to default profiles: default
+2019-07-16 19:35:53.928 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext -
+                Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3983c6cf: startup date [Tue Jul 16 19:35:53 CST 2019]; root of context hierarchy
+2019-07-16 19:35:54.002 [background-preinit] INFO  o.h.validator.internal.util.Version -
+                HV000001: Hibernate Validator 5.3.5.Final
+2019-07-16 19:35:56.278 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat initialized with port(s): 8089 (http)
+2019-07-16 19:35:56.288 [restartedMain] INFO  o.a.catalina.core.StandardService -
+                Starting service [Tomcat]
+2019-07-16 19:35:56.289 [restartedMain] INFO  o.a.catalina.core.StandardEngine -
+                Starting Servlet Engine: Apache Tomcat/8.5.16
+2019-07-16 19:35:56.365 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring embedded WebApplicationContext
+2019-07-16 19:35:56.365 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -
+                Root WebApplicationContext: initialization completed in 2437 ms
+2019-07-16 19:35:56.617 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'dispatcherServlet' to [/]
+2019-07-16 19:35:56.619 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -
+                Mapping servlet: 'statViewServlet' to [/druid/*]
+2019-07-16 19:35:56.623 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-07-16 19:35:56.623 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-07-16 19:35:56.624 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-07-16 19:35:56.624 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'requestContextFilter' to: [/*]
+2019-07-16 19:35:56.624 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -
+                Mapping filter: 'webStatFilter' to urls: [/*]
+2019-07-16 19:35:56.791 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure -
+                Init DruidDataSource
+2019-07-16 19:35:57.421 [restartedMain] INFO  c.a.druid.pool.DruidDataSource -
+                {dataSource-1} inited
+2019-07-16 19:35:57.949 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -
+                Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3983c6cf: startup date [Tue Jul 16 19:35:53 CST 2019]; root of context hierarchy
+2019-07-16 19:35:58.010 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/ || /index]}" onto public java.lang.String com.compass.MainController.s()
+2019-07-16 19:35:58.011 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/layout]}" onto public java.lang.String com.compass.MainController.l()
+2019-07-16 19:35:58.013 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/dubbo/dubboPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.DubboController.DubboPage()
+2019-07-16 19:35:58.017 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/register]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.register(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:35:58.017 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/login]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.login(com.compass.entity.User,org.springframework.validation.BindingResult,org.springframework.ui.ModelMap)
+2019-07-16 19:35:58.018 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginout]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginOut(org.springframework.web.bind.support.SessionStatus)
+2019-07-16 19:35:58.018 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/registeredPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.registeredPage()
+2019-07-16 19:35:58.018 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/login/loginPage]}" onto public org.springframework.web.servlet.ModelAndView com.compass.controller.LoginController.loginPage()
+2019-07-16 19:35:58.021 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-07-16 19:35:58.021 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -
+                Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-07-16 19:35:58.059 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:35:58.059 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:35:58.105 [restartedMain] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -
+                Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-07-16 19:35:58.546 [restartedMain] INFO  o.s.w.s.v.f.FreeMarkerConfigurer -
+                ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-07-16 19:35:58.757 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer -
+                LiveReload server is running on port 35729
+2019-07-16 19:35:59.045 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Registering beans for JMX exposure on startup
+2019-07-16 19:35:59.047 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'statFilter' has been autodetected for JMX exposure
+2019-07-16 19:35:59.047 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-07-16 19:35:59.053 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.spring.boot.autoconfigure:name=dataSource,type=DruidDataSourceWrapper]
+2019-07-16 19:35:59.054 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter -
+                Located MBean 'statFilter': registering with JMX server as MBean [com.alibaba.druid.filter.stat:name=statFilter,type=StatFilter]
+2019-07-16 19:35:59.069 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Initializing ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:35:59.078 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol -
+                Starting ProtocolHandler ["http-nio-8089"]
+2019-07-16 19:35:59.105 [restartedMain] INFO  o.a.tomcat.util.net.NioSelectorPool -
+                Using a shared selector for servlet write/read
+2019-07-16 19:35:59.129 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer -
+                Tomcat started on port(s): 8089 (http)
+2019-07-16 19:35:59.136 [restartedMain] INFO  com.compass.SpringBootApplication -
+                Started SpringBootApplication in 6.079 seconds (JVM running for 7.39)
+2019-07-16 19:36:09.043 [http-nio-8089-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -
+                Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-07-16 19:36:09.043 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization started
+2019-07-16 19:36:09.067 [http-nio-8089-exec-1] INFO  o.s.web.servlet.DispatcherServlet -
+                FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2019-07-16 19:36:09.188 [http-nio-8089-exec-1] ERROR freemarker.runtime -
+                Error executing FreeMarker template
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "tool/dubbo.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 19:36:09.199 [http-nio-8089-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "tool/dubbo.ftl" at line 2, column 1]
+----] with root cause
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "tool/dubbo.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 19:36:28.436 [http-nio-8089-exec-1] ERROR freemarker.runtime -
+                Error executing FreeMarker template
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 19:36:28.438 [http-nio-8089-exec-1] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -
+                Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----] with root cause
+freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> Session.loginUser  [in template "layout/layout.ftl" at line 42, column 37]
+
+----
+Tip: It's the step after the last dot that caused this error, not those before it.
+----
+Tip: If the failing expression is known to be legally refer to something that's sometimes null or missing, either specify a default value like myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthesis: (myOptionalVar.foo)!myDefault, (myOptionalVar.foo)??
+----
+
+----
+FTL stack trace ("~" means nesting-related):
+	- Failed at: ${Session.loginUser.userName}  [in template "layout/layout.ftl" in macro "compassMethod" at line 42, column 35]
+	- Reached through: @compassMethod  [in template "index.ftl" at line 2, column 1]
+----
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:134)
+	at freemarker.core.UnexpectedTypeException.newDesciptionBuilder(UnexpectedTypeException.java:80)
+	at freemarker.core.UnexpectedTypeException.<init>(UnexpectedTypeException.java:43)
+	at freemarker.core.NonHashException.<init>(NonHashException.java:49)
+	at freemarker.core.Dot._eval(Dot.java:48)
+	at freemarker.core.Expression.eval(Expression.java:81)
+	at freemarker.core.DollarVariable.calculateInterpolatedStringOrMarkup(DollarVariable.java:96)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:59)
+	at freemarker.core.Environment.visit(Environment.java:362)
+	at freemarker.core.Environment.invoke(Environment.java:714)
+	at freemarker.core.UnifiedCall.accept(UnifiedCall.java:83)
+	at freemarker.core.Environment.visit(Environment.java:326)
+	at freemarker.core.Environment.visit(Environment.java:332)
+	at freemarker.core.Environment.process(Environment.java:305)
+	at freemarker.template.Template.process(Template.java:378)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.processTemplate(FreeMarkerView.java:367)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.doRender(FreeMarkerView.java:284)
+	at org.springframework.web.servlet.view.freemarker.FreeMarkerView.renderMergedTemplateModel(FreeMarkerView.java:234)
+	at org.springframework.web.servlet.view.AbstractTemplateView.renderMergedOutputModel(AbstractTemplateView.java:167)
+	at org.springframework.web.servlet.view.AbstractView.render(AbstractView.java:303)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-07-16 19:36:35.937 [http-nio-8089-exec-8] INFO  c.c.controller.LoginController -
+                sol 登录成功
