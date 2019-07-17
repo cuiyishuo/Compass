@@ -80,7 +80,7 @@
                     </a>
                     <ul class="treeview-menu">
                         <li>
-                            <a href=""><i class="fa fa-circle-o"></i>dubbo接口测试</a>
+                            <a href="/dubbo/dubboPage"><i class="fa fa-circle-o"></i>dubbo接口测试</a>
                         </li>
                         <li>
                             <a href=""><i class="fa fa-circle-o"></i>http接口测试</a>
