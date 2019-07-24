@@ -11,6 +11,19 @@ pipeline {
       steps {
         sh 'mvn -B -DskipTests clean package'
       }
+<<<<<<< HEAD
+      stage('Move jar') {
+                  steps {
+                      sh 'mv /compass'
+                  }
+                  post {
+                      always {
+                          echo "finish"
+                      }
+                  }
+            }
+   }
+=======
     }
     stage('Test') {
       post {
@@ -18,6 +31,7 @@ pipeline {
           echo 'finish'
 
         }
+>>>>>>> 0de316afa06d88f17d1498c4cd2b3621da24788f
 
       }
       steps {
