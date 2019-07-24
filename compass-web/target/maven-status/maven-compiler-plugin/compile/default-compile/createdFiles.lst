@@ -1,0 +1,6 @@
+com/compass/controller/LoginController.class
+com/compass/Interceptor/MyInterceptor.class
+com/compass/SpringBootApplication.class
+com/compass/controller/DubboController.class
+com/compass/Interceptor/InterceptorConfig.class
+com/compass/MainController.class
