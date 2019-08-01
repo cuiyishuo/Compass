@@ -25,7 +25,7 @@ public class MyInterceptor implements HandlerInterceptor {
         if (null == loginUser) {
             System.out.println("登录失败，没有登录权限，重定向到登录页");
             response.setStatus(302);
-            response.sendRedirect("login/loginPage");
+            response.sendRedirect("/login/loginPage");
         }
         System.out.println();
         return true;
