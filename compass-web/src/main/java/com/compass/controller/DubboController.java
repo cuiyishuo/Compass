@@ -1,6 +1,7 @@
 package com.compass.controller;
 
 import com.compass.service.DubboService;
+import com.compass.vo.DubboApi;
 import com.compass.vo.ResponseMessage;
 import com.github.pagehelper.util.StringUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -55,5 +56,32 @@ public class DubboController {
         // 调用service解析ip的方法
         ResponseMessage responseMessage = dubboService.resolveIp(zkAddress, interfaceName);
         return responseMessage;
+    }
+
+    /**
+     * 解析接口下的方法
+     * @param ipPort
+     * @param interfaceName
+     * @return
+     */
+    @RequestMapping("/resolveMethod")
+    public @ResponseBody
+    ResponseMessage resolveMethod(String ipPort, String interfaceName) {
+        if (StringUtil.isEmpty(ipPort)) {
+            return ResponseMessage.errorResponse("ip地址不能为空");
+        }
+        if (StringUtil.isEmpty(interfaceName)) {
+            return ResponseMessage.errorResponse("接口名不能为空");
+        }
+        // 调用service解析method的方法
+        ResponseMessage responseMessage = dubboService.resolveMethod(ipPort, interfaceName);
+        return responseMessage;
+    }
+
+    @RequestMapping("/invoke")
+    public @ResponseBody
+    ResponseMessage invoke(DubboApi dubboApi) {
+        String result = dubboService.invoke(dubboApi);
+        return ResponseMessage.successResponse(result);
     }
 }

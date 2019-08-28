@@ -1,10 +1,17 @@
 package com.compass.service;
 
+import com.compass.util.TelnetSocket;
+import com.compass.vo.DubboApi;
 import com.compass.vo.ResponseMessage;
+import com.sun.org.apache.xalan.internal.xsltc.runtime.InternalRuntimeError;
 import lombok.extern.slf4j.Slf4j;
 import org.I0Itec.zkclient.ZkClient;
+import org.I0Itec.zkclient.exception.ZkNoNodeException;
+import org.I0Itec.zkclient.exception.ZkTimeoutException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.jta.WebSphereUowTransactionManager;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
@@ -27,13 +34,26 @@ public class DubboService {
 
     /**
      * 通过接口名解析出服务所在的地址和端口
+     *
      * @param zkAddress
      * @param interfaceName
      * @return
      */
     public ResponseMessage resolveIp(String zkAddress, String interfaceName) {
-        ZkClient zkClient = new ZkClient(zkAddress);
-        List<String> dubboNodeList = zkClient.getChildren("/dubbo/" + interfaceName.trim() + "/providers");
+        ZkClient zkClient = null;
+        try {
+            // 超过3s则抛出异常
+            zkClient = new ZkClient(zkAddress, 3000);
+        } catch (ZkTimeoutException z) {
+            return ResponseMessage.errorResponse("注册中心链接异常，请确认地址是否正确");
+        }
+        List<String> dubboNodeList;
+        try {
+            dubboNodeList = zkClient.getChildren("/dubbo/" + interfaceName.trim() + "/providers");
+        } catch (ZkNoNodeException z) {
+            return ResponseMessage.errorResponse("请确认接口是否存在，接口名称：" + interfaceName);
+        }
+
         List<String> ipList = new ArrayList<String>();
         for (String s : dubboNodeList) {
             try {
@@ -55,5 +75,60 @@ public class DubboService {
         }
         // 将解析到的ip返回
         return ResponseMessage.successResponse(ipList);
+    }
+
+    /**
+     * 通过接口ip和接口名称解析出接口下的方法
+     *
+     * @param ip
+     * @param interfaceName
+     * @return
+     */
+    public ResponseMessage resolveMethod(String ip, String interfaceName) {
+        TelnetSocket telnetSocket = null;
+        List<String> methodList = new ArrayList<String>();
+        // 将传进来的ip拆分为ip和port
+        String[] ips = ip.split(":");
+        try {
+            // 通过telnet链接zk
+            telnetSocket = new TelnetSocket(ips[0], Integer.valueOf(ips[1]), 3000);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        try {
+            // 获得返回的信息
+            String result = telnetSocket.send("ls -l " + interfaceName);
+            System.out.println("before:" + result);
+            result = result.replace("dubbo>", "");
+            System.out.println("after:" + result);
+            // 将返回的数据以换行符查分成数组
+            String[] methods = result.split("\r\n");
+            // 将每一行的方法名分离出来，通过空格处的索引位置begin
+            for (String method : methods) {
+                System.out.println("method:" + method);
+                method = method.substring(method.indexOf(" "));
+                methodList.add(method);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return ResponseMessage.successResponse(methodList);
+    }
+
+    public String invoke(DubboApi dubboApi) {
+        String[] ips = dubboApi.getIp().split(":");
+        TelnetSocket telnetSocket = null;
+        try {
+            telnetSocket = new TelnetSocket(ips[0], Integer.parseInt(ips[1]));
+            telnetSocket.setReadEncoding(dubboApi.getEncoding());
+            telnetSocket.setWriteEncoding(dubboApi.getEncoding());
+            String methodName = dubboApi.getMethodName().substring(0, dubboApi.getMethodName().indexOf("(")).trim();
+            String cmd = "invoke " + dubboApi.getInterfaceName() + "." + methodName + "(" + dubboApi.getParam() + ")";
+            String result = telnetSocket.send(cmd);
+            return result;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
