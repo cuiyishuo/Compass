@@ -78,6 +78,11 @@ public class DubboController {
         return responseMessage;
     }
 
+    /**
+     * 调用dubbo接口
+     * @param dubboApi
+     * @return
+     */
     @RequestMapping("/invoke")
     public @ResponseBody
     ResponseMessage invoke(DubboApi dubboApi) {
