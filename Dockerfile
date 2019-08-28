@@ -1,3 +1,3 @@
 FROM tomcat:8
 # 复制war包到tomcat
-COPY target/*.war /usr/local/tomcat/webapps/
+COPY target/*.jar /usr/local/tomcat/webapps/
