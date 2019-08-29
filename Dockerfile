@@ -1,3 +1,3 @@
 FROM tomcat:8
 # 复制war包到tomcat
-COPY target/*.jar /usr/local/tomcat/webapps/
+COPY target/*.jar /home/test/sollib/local/tomcat/webapps
